@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Login to the ATC Question and Answer Platform</title>
+	<script type="text/javascript" src="js_api.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	</head>
+	
+	<body>
+		<div id="parent">
+			<select id="authenticate_action" onchange="toggeAuthenticateUI();">
+				<option value="0">Login</option>
+				<option value="1">Signup</option>
+			</select>
+			
+			
+			<div id="page_authenticate">
+				<input type="text" id="id_input_email" placeholder="Email"/>
+				<br />
+				
+				<input type="password" id="id_input_password" placeholder="Password"/><br />
+				<input id="keep_session" value="Keep me Signed in" type="checkbox" /><label>Keep me Logged in</label>
+				
+				<div><button id="id_button_generate_password" onclick="setPassword();">Generate Password</button></div>
+				<div><button id="id_button_auth" onclick="authenticate();">Login</button></div>
+				<p id="auth_errors"></p>
+		</div>
+	</div>
+	</body>
+
+<script>
+
+</script>
+</html>

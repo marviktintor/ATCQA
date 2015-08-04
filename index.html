@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ATC QA Platform</title>
+<script type="text/javascript" src="js_api.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div id="div_refresh_view">
+		<button id="id_refresh_view" onclick="refreshView();"> Refresh</button>
+	</div>
+
+	<div id="main_parent">
+		<div>
+			<div id="div_questions" style="float:left; width:700px; height:1000px;">
+				<div>
+				
+					<label>Post Question</label>
+					<hr />
+					<textarea id="question" style="width:300px; height:50px; resize:none;" placeholder="Write you question"></textarea><br />
+					<input style="width:300px; height:30px; " id="id_input_question_tags" placeholder="Enter tags separated with a comma"/>
+					<button id="id_button_post_question" >Post Question</button>
+					<p id="question_errors"></p>
+				</div>
+				
+				<label>Posted Questions</label> <input oninput="search();" id="id_input_search" placeholder="Search here" style="width:300px; height:20px; color:#989898;"/>
+				<hr />
+				<div id="posted_questions">
+					<label>Question</label>
+					<br />
+					<label>Answers</label><label>Tags</label><label>Poster</label><label>Time</label>
+				</div>
+			</div>
+			<div id="div_anwsers" style="float:left; width:600px; height:1000px; ">
+				<div>
+					<label>Your Answer</label>
+					<hr />
+					
+					<input id="id_answer"  style="width:300px; height:30px; " type="text"/><br />
+					<button onclick="postAnswer();">Post Answer</button>
+					<p id="answer_errors"></p>
+					<hr />
+					<label>Answers</label>
+					<br />
+					<div id="question_answers">
+					
+					</div>
+				</div>
+			
+			</div>
+				
+		</div>
+	</div>
+</body>
+</html>
